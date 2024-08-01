@@ -1,9 +1,7 @@
 const PDFDocument = require('pdfkit');
 const fs = require('fs');
 async function fetchData() {
-        const response = await fetch("https://script.googleusercontent.com/macros/echo?user_content_key=PpLFfsB3svRZ5WQmTTBVb4EimVle9UeS4IMtk9-IFtzVoXOc0P8LtJHGKW_5hyETov2MLVmt3_eyg0NNPAaQPLz4vxZsygohm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKNtqvW5q7xSobAXE2FOJuEq_fHYr8kYzFkb5Cu5lgAZb9fL3mLDwp9t6F9Wu7E3q4cfI-px9kdTtlee6bkKUYWejCcvqTjtpw&lib=MSib8KMYtu98HPisS9O7y0aPF1zpaNOwC");
-        let value= await response.json();
-        // assuming the response is JSON
+        const response = await fetch("Your api")
         let arr=value.data;
         console.log(arr);  
         const org=arr.filter(item => item.Organization=='OG');
